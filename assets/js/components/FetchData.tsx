@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
 import { Table, Button } from 'reactstrap'
+import "isomorphic-fetch"
 
 // The interface for our API response
 interface ApiResponse {
@@ -28,7 +29,7 @@ export default class FetchData extends React.Component<{}, FetchDataExampleState
     fetch('/api/languages')
       .then((response) => response.json() as Promise<ApiResponse>)
       .then((data) => {
-        this.setState({ languages: data.data, loading: false })
+          this.setState({ languages: data.data, loading: false })
       })
   }
 

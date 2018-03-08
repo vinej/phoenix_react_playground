@@ -59,6 +59,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      Promise: 'es6-promise-promise', // works as expected
+    }),
     new CleanWebpackPlugin([
       path.join(__dirname, 'priv/static')
     ]),
