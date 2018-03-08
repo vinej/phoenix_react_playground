@@ -24,7 +24,7 @@ export default class Counter extends React.Component<{}, CounterState> {
         <Button color="secondary" onClick={() => { this.decrementCounter() }}>Decrement counter</Button>{' '}
         <Button color="secondary" onClick={() => { this.resetCounter() }}>Reset counter</Button>
         <br /><br />
-        <p><Link to="/">Back to home</Link></p>
+        <p><Link to="/spa">Back to home</Link></p>
       </div>
     )
   }

@@ -8,15 +8,12 @@
     <meta name="author" content="">
 
     <title>Phoenix+React Playground</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/spa.css") %>">
   </head>
 
   <body>
-    <Jumbotron>
-      <h2>Welcome to Phoenix!</h2>
-      <p className="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-    </Jumbotron>
+    <div>SPA</div>
     <%= render @view_module, @view_template, assigns %>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/spa.js") %>"></script>
   </body>
 </html>

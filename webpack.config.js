@@ -18,13 +18,15 @@ const plugins = {
 
 module.exports = {
   devtool: 'source-map',
-  entry: [
-    path.join(__dirname, 'assets/js/app.tsx'),
-    path.join(__dirname, 'assets/scss/app.scss')
-  ],
+  entry: {
+    app: path.join(__dirname, 'assets/js/app.tsx'),
+    spa: path.join(__dirname, 'assets/js/spa.tsx'),
+    app: path.join(__dirname, 'assets/scss/app.scss'),
+    spa: path.join(__dirname, 'assets/scss/spa.scss')
+  },
   output: {
     path: path.join(__dirname, '/priv/static'),
-    filename: 'js/app.js'
+    filename: 'js/[name].js'
   },
   module: {
     loaders: [
@@ -74,7 +76,7 @@ module.exports = {
     new CheckerPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new ExtractTextPlugin({
-      filename: 'css/app.css',
+      filename: 'css/[name].css',
       allChunks: true
     }),
     new CopyWebpackPlugin([

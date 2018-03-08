@@ -65,7 +65,7 @@ export default class FetchData extends React.Component<{}, FetchDataExampleState
         <p>This component demonstrates fetching data from the Phoenix API endpoint.</p>
         {content}
         <br /><br />
-        <p><Link to="/">Back to home</Link></p>
+        <p><Link to="/spa">Back to home</Link></p>
       </div>
     )
   }

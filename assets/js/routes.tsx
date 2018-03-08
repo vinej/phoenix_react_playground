@@ -8,8 +8,8 @@ import FetchData from './components/FetchData'
 
 export const routes = (
   <Root>
-    <Route exact path="/" component={ Home } />
-    <Route path="/counter" component={ Counter } />
-    <Route path="/fetch-data" component={ FetchData } />
+    <Route exact path="/spa" component={ Home } />
+    <Route path="/spa/counter" component={ Counter } />
+    <Route path="/spa/fetch-data" component={ FetchData } />
   </Root>
 )

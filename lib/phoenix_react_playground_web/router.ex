@@ -19,9 +19,22 @@ defmodule PhoenixReactPlaygroundWeb.Router do
     resources "/languages", LanguageController, except: [:new, :edit]
   end
 
+  scope "/spa", PhoenixReactPlaygroundWeb do
+    pipe_through :browser # Use the default browser stack for React
+
+    get "/*path", PageController, :index
+
+  end
+
+  scope "/company", PhoenixReactPlaygroundWeb do
+    pipe_through :browser # Use the default browser stack
+
+    resources "/", CompanyController
+  end
+
   scope "/", PhoenixReactPlaygroundWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/*path", PageController, :index
+    resources "/", CompanyController
   end
 end

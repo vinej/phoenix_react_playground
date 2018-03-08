@@ -36,10 +36,10 @@ export default class Home extends React.Component<{}, {}> {
             <h4>Examples</h4>
             <ul>
               <li>
-                <Link to="/counter">Counter</Link>
+                <Link to="/spa/counter">Counter</Link>
               </li>
               <li>
-                <Link to="/fetch-data">Fetch Data</Link>
+                <Link to="/spa/fetch-data">Fetch Data</Link>
               </li>
             </ul>
           </Col>
@@ -55,6 +55,9 @@ export default class Home extends React.Component<{}, {}> {
               </li>
               <li>
                 <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+              </li>
+              <li>
+                <a href="/company">Company</a>
               </li>
             </ul>
           </Col>
