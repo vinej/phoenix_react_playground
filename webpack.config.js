@@ -19,10 +19,10 @@ const plugins = {
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: path.join(__dirname, 'assets/js/app.tsx'),
-    spa: path.join(__dirname, 'assets/js/spa.tsx'),
-    app: path.join(__dirname, 'assets/scss/app.scss'),
-    spa: path.join(__dirname, 'assets/scss/spa.scss')
+    appjs: path.join(__dirname, 'assets/js/app.tsx'),
+    spajs: path.join(__dirname, 'assets/js/spa.tsx'),
+    appcss: path.join(__dirname, 'assets/scss/app.scss'),
+    spacss: path.join(__dirname, 'assets/scss/spa.scss')
   },
   output: {
     path: path.join(__dirname, '/priv/static'),

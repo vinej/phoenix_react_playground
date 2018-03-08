@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <title>Phoenix+React Playground</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/appcss.css") %>">
   </head>
 
   <body>
@@ -17,6 +17,6 @@
       <p className="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
     </Jumbotron>
     <%= render @view_module, @view_template, assigns %>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/appjs.js") %>"></script>
   </body>
 </html>

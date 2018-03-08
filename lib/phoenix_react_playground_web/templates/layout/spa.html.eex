@@ -8,12 +8,12 @@
     <meta name="author" content="">
 
     <title>Phoenix+React Playground</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/spa.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/spacss.css") %>">
   </head>
 
   <body>
     <div>SPA</div>
     <%= render @view_module, @view_template, assigns %>
-    <script src="<%= static_path(@conn, "/js/spa.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/spajs.js") %>"></script>
   </body>
 </html>
